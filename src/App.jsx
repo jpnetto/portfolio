@@ -21,7 +21,7 @@ function App() {
         </div>
       </header> 
       <div className="min-h-screen bg-gradient-to-br from-eerieBlack to-jet text-white flex flex-col justify-center items-center font-sans"> 
-        <main className="min-h-screen flex-grow flex flex-col justify-center items-center"> 
+        <main id="home" className="min-h-screen flex-grow flex flex-col justify-center items-center"> 
           <section className="text-center"> <h2 className="text-3xl text-fireRed font-semibold  mb-5">Computer Technician, Fullstack Developer & Versatile</h2>
             <p className="text2sm text-white font-mono mb-4">I design and code beautifully simple things, and I love what i do. </p>
     
@@ -37,8 +37,7 @@ function App() {
           </section>
         </main> 
         <section id="projects" className="min-h-screen w-full bg-black flex flex-col items-center">
-        <p className="text-4xl text-white font-semibold mt-8">About Me</p>
-          <div className="flex flex-row w-11/12 p-4 mt-6  bg-opacity-50 shadow-md rounded-lg">
+          <div className="flex flex-row w-11/12 p-4 mt-20 bg-opacity-50 shadow-md rounded-lg">
           
             <div className="overflow-y-auto w-full">
               <h2 className="text-2xl font-semibold ml-10 mb-6">Profissional Experience</h2>
@@ -82,16 +81,15 @@ function App() {
                       <img align="center" alt= "Joao-Nodejs" height="30" width="30" className="mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
                     </div>
                   </div>
-                  <div className="bg-jet bg-opacity-50 shadow-md rounded-lg p-6 hover:bg-fireRed transition duration-300">
-                    <h3 className="text-lg font-semibold mb-2">Project Title 6</h3> <p className="text-gray-300">Project description goes here.</p>
-                  </div>
-                  
-                  {/* Repeat for more projects */}
                 </div>
               </div>
             </div>
           </div>
         </section>
+          <section id='contact' className="min-h-screen flex-grow flex flex-col justify-center items-center">
+            
+    
+          </section> 
       </div>
     </>
   )
