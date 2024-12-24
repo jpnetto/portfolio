@@ -1,6 +1,8 @@
 import { useState } from 'react'
+import emailjs from 'emailjs-com'
 import githubLogo from './assets/github.png'
 import linkedinLogo from './assets/linkedin.png'
+import ContactForm from './contactForm'
 
 
 function App() {
@@ -22,8 +24,9 @@ function App() {
       </header> 
       <div className="min-h-screen bg-gradient-to-br from-eerieBlack to-jet text-white flex flex-col justify-center items-center font-sans"> 
         <main id="home" className="min-h-screen flex-grow flex flex-col justify-center items-center"> 
-          <section className="text-center"> <h2 className="text-3xl text-fireRed font-semibold  mb-5">Computer Technician, Fullstack Developer & Versatile</h2>
-            <p className="text2sm text-white font-mono mb-4">I design and code beautifully simple things, and I love what i do. </p>
+          <section className="text-center"> 
+            <h2 className="text-3xl text-fireRed font-semibold  mb-5">Computer Technician, Fullstack Developer & Versatile</h2>
+            <p className="text2sm text-white font-mono mb-4">I design and code beautifully simple things, and I love what I do. </p>
     
           </section> 
           
@@ -86,9 +89,14 @@ function App() {
             </div>
           </div>
         </section>
-          <section id='contact' className="min-h-screen flex-grow flex flex-col justify-center items-center">
-            
-    
+          <section id='contact' className="min-h-screen w-full flex flex-row">
+            <div className="flex flex-col w-1/2 flex items-center">
+              <h2 className="text-3xl text-white font-semibold mt-20 mb-5">Any interest in my projects or ideas?</h2>
+              <p className="text2sm text-white mx-12 mb-4">If you find something that arouse your interest, don't hesitate to reach out. I'm always excited to connect with fellow enthusiasts or potential collaborators. Send me a message today to talk how we can create something great together!</p>
+            </div>
+            <div className="flex flex-col w-1/2 flex items-center flex justify-center">
+              <ContactForm></ContactForm>
+            </div>
           </section> 
       </div>
     </>
