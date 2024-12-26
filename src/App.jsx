@@ -79,9 +79,11 @@ function App() {
                     <h3 className="text-lg font-semibold mb-2">Site Portfolio</h3>
                     <p className="text-gray-300 mb-4">Developed a simple site to share experiences and projects with the community.</p>
                     <div className="flex flex-row content-center">
-                      <p className="text-base font-semibold mr-2">Technologies Used: </p>           
+                      <p className="text-base font-semibold mr-2">Technologies Used: </p> 
+                      <img align="center" alt= "Joao-ViteJS" height="30" width="30" className="mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" />            
                       <img align="center" alt= "Joao-ReactNative" height="30" width="30" className="mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />                
-                      <img align="center" alt= "Joao-Nodejs" height="30" width="30" className="mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+                      <img align="center" alt= "Joao-Tailwind" height="30" width="30" className="mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+
                     </div>
                   </div>
                 </div>

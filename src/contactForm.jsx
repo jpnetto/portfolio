@@ -16,10 +16,10 @@ const ContactForm = () => {
         e.preventDefault(); 
         
         emailjs.send(
-            'service_kh5gaf2', // Replace with your Service ID 
-            'template_gzxc58h', // Replace with your Template ID
+            'service_kh5gaf2', //Service ID 
+            'template_gzxc58h', //Template ID
             formData,
-            'PLej5n88wUnczlPkS' // Replace with your User ID
+            'PLej5n88wUnczlPkS' //User ID
         ) .then((result) => {
             alert('Message sent successfully!');
             setFormData({ name: '', email: '', message: '' });
@@ -40,12 +40,12 @@ const ContactForm = () => {
                 <input type="text" name="name" value={formData.name} onChange={handleChange} className="w-full p-2 rounded bg-jet text-gray-300" required />
             </div>
             <div className="my-6">
-                <label htmlFor="email" className="block ml-2 font-mono text-gray-300">Email</label>
+                <label htmlFor="email" className="block ml-2 font-mono text-gray-300">E-Mail</label>
                 <input type="email" name="email" value={formData.email} onChange={handleChange} className="w-full p-2 rounded bg-jet text-gray-300" required />
             </div>
             <div className="my-6">
                 <label htmlFor="message" className="block ml-2 font-mono text-gray-300">Message</label>
-                <textarea name="message" value={formData.message} onChange={handleChange} className="w-full p-2 rounded bg-jet text-gray-300" rows="5" required />
+                <textarea name="message" value={formData.message} onChange={handleChange} className="w-full p-2 rounded bg-jet text-gray-300" rows="4" required />
             </div>
             <div className="flex justify-center mt-8">
                 <button type="submit" className="bg-jet font-mono text-white w-2/3 h-20 rounded-lg hover:bg-fireRed transition duration-300"> Send Message </button>
